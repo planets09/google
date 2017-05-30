@@ -33,7 +33,7 @@ a.button:hover {
 	text-align: right;
 	padding: 5px 10px 0 0;
 	vertical-align: bottom;
-	margin: 5px 5px 0 0;
+	margin: 5px 10px 0 0;
 	font-size: 13px;
 }
 
@@ -84,7 +84,7 @@ a.button:hover {
 	width: 600px;
 	margin: 0 auto;
 	padding: 5px;
-	border: 1px solid #d9d9d9;
+	border: 2px solid #d9d9d9;
 	font-size: 16px;
 	border-radius: 5px;
 	display: block;
@@ -106,7 +106,7 @@ a.button:hover {
 	color: #666;
 	font-size: 14px;
 	font-weight: bold;
-	line-height: 27px
+	line-height: 28px
 	margin: 17px 6px;
 	padding: 0 12px;
 	display: inline-block;
@@ -115,8 +115,8 @@ a.button:hover {
 
 .search-buttons:hover {
 	background-color: #f8f8f8;
-	border: 1px solid #c6c6c6;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	border: 2px solid #c6c6c6;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 	color: #333;
 }
 
@@ -166,11 +166,30 @@ a.button:hover {
 
 
 
-/*body {
-	background-color: green;
+@media(max-width: 620px) {
+	.search-box input {
+		width: 50%;
+	}
 }
 
-ul li {
-	list-style-type: none;
+@media(max-width: 540px) {
+	ul.right-site-links {
+		float: left;
+		padding: 0px;
+	}
+
+	ul.left-site-links{
+		padding: 0px;
+	}
 }
-*/
+
+@media(max-width: 465px) {	
+	img.profile-img, span.share-button {
+		display: none;
+	}
+}
+
+
+
+
+
